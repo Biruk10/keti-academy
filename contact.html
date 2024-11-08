@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/photo_2024-06-19_09-21-52.jpg">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <!-- main Nav bar-->
+    <nav class="navbar navbar-expand-lg text-bg-warning p-2 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/img/photo_2024-06-19_09-21-52.jpg" width="25" height="25" > <span class="text-light">KETI </span>ACADEMY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Library.html">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contacts</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="visionAndMision.html">Vision,Mission and Values</a></li>
+                <li><a class="dropdown-item" href="GeneralManagerMessage.html">Message from General Manager</a></li>
+                <li><a class="dropdown-item" href="policy.html">Instructional Philosophy And Focus</a></li>
+                
+              </ul>
+              
+            </li>
+            <li class="nav-item translate-section">
+              <div id="google_translate_element"> </div>
+
+            </li>
+          </ul>
+        </div>
+    <!-- Google Translate Widget Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'am,ti,om,en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+
+<!-- Load Google Translate API -->
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+    </nav>
+      <br>
+      <!-- go up btn -->
+  <button id="goUp" class="btn btn-warning">
+    &#8679; Go Up
+</button>
+<!--Go up Java Script-->
+<script>
+  // Show the button when scrolling down
+  window.onscroll = function() {
+      const button = document.getElementById("goUp");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          button.style.display = "block"; // Show button
+      } else {
+          button.style.display = "none"; // Hide button
+      }
+  };
+
+  // Scroll to the top when the button is clicked
+  document.getElementById("goUp").onclick = function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+</script>
+    <section class="container my-5">
+        <div class="row">
+           <!-- Contact us -->
+           <div class="col-md-6">
+            <h3 class="text-warning">Contact us</h3>
+            <form action="" name="contact-form" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="your-name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="your-email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning" id="submit">Submit</button>
+            </form>
+            <!-- Invisible iframe to prevent Google Form from redirecting -->
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+            
+            <script src="contact.js"></script>
+            <!--Old contact form-->
+             
+        </div>
+            
+            <!-- Contact Information -->
+            <div class="col-md-6 shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                <h2 class="text-warning">Contact Us</h2>
+                <p>If you have any questions, feel free to reach out to us through the information below:</p>
+                <ul class="list-unstyled">
+                    <li><strong><i class="fas fa-home mr-3"></i>: </strong> Kebele 10 Asella Ethiopia
+
+                    </li>
+                    <li><strong><i class="fas fa-phone mr-3"></i>:</strong> +251973730861/91</li>
+                    <li><strong><i class="fas fa-phone mr-3"></i>:</strong> +251973730861/91</li>
+                    <li><strong><i class="fas fa-envelope mr-3"></i>:</strong>ketiassela@gmail.com </li>
+                    <li><strong>Office Hours:</strong> Mon - Fri, 2:00 AM - 11:00 AM</li>
+                </ul>
+                <br> 
+                <br> 
+                <div class="col-md-6">
+                  <h3 class="text-warning">Find Us</h3>
+                  <div class="embed-responsive embed-responsive-16by9">
+                   
+                    <!-- Google Map -->  
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.9509580927!2d39.131455645076265!3d7.982489953807162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b4e9ee5848f499%3A0xf9b2afd90a5535b8!2sKeti%20Learning%20Center!5e1!3m2!1sen!2set!4v1729693927389!5m2!1sen!2set"
+                          
+                          width="200%" 
+                          height="300" 
+                          style="border:0;" 
+                          allowfullscreen="" 
+                          loading="lazy">
+                      </iframe>
+                  </div>
+              </div>
+            </div>
+           
+          
+          
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-success text-white pt-5 pb-4">
+  <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+          <!-- About Section -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">KETI ACADEMY</h5>
+              <p>KETI Academy is committed to help our students discover and grow to reach their God given potential in their education and personal development .</p>
+          </div>
+
+          <!-- Links Section -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+              <p class="flinks"><a href="index.html" class="text-white" style="text-decoration: none;">Home</a></p>
+              <p class="flinks"><a href="services.html" class="text-white" style="text-decoration: none;">Services</a></p>
+              <p class="flinks"><a href="GeneralManagerMessage.html" class="text-white" style="text-decoration: none;">Message from General Manager</a></p>
+              <p class="flinks"><a href="#" class="text-white" style="text-decoration: none;">Link 4</a></p>
+          </div>
+
+          <!-- Contact Section -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+              <p><i class="fas fa-home mr-3"></i> Asella Kebele 10 Ethiopia</p>
+              <p><i class="fas fa-envelope mr-3"></i> ketiassela@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +251973730861/91</p>
+              <p><i class="fas fa-print mr-3"></i> +251222222222</p>
+          </div>
+
+          <!-- Social Media Section -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Follow Us</h5>
+              <p class="sociallinks"><a href="https://web.facebook.com/profile.php?id=61560589442812" target="_blank" class="text-white me-4"><i class="fab fa-facebook-f"></i></a></p>
+              <p class="sociallinks"><a href="https://t.me/ketilearningcenter" target="_blank" class="text-white me-4"><i class="fab fa-telegram"></i></a></p>
+              <p class="sociallinks"><a href="#" class="text-white me-4" target="_blank"><i class="fab fa-google"></i></a></p>
+          </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="row">
+          <div class="col-md-12 mt-4">
+              <p class="text-center text-white">© 2024 All rights reserved by <a href="#" class="text-warning" style="text-decoration: none;">Keti Academy</a></p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

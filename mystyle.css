@@ -1,0 +1,116 @@
+.carousel-item {
+    height: 500px;
+  }
+
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .animated-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .visible {
+    opacity: 1;
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.nav-link:hover {
+    color: #fff !important;
+    background-color: #07760b !important;
+    border-radius: 5px;
+}
+.servicelink{
+  text-decoration: none;
+}
+.flinks:hover {
+  color: antiquewhite !important;
+  background-color: #cfb20b !important;
+  border-radius: 5px;
+}
+.sociallinks:hover {
+  color: antiquewhite !important;
+  background-color: #cfb20b !important;
+  border-radius: 5px;
+}
+.counter {
+  font-size: 2em;
+  font-weight: bold;
+  color: #FFC107;
+}
+.translate-section {
+  text-align: right;
+  margin-top: 10px;
+}
+.service-item {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+.vision-item{
+  text-align: center;
+}
+
+/* Logo slider container */
+.logo-slider {
+  display: flex;
+  animation: scroll 25s linear infinite;
+  white-space: nowrap;
+}
+
+/* Logo images */
+.logo-slider img {
+  height: 100px;
+  margin: 0 25px;
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+#goUp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none; /* Hidden by default */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+.volunter{
+  color: #cfb20b;
+  text-decoration: none;
+}
+.volunter:hover{
+  color: antiquewhite !important;
+  background-color: #07760b !important;
+  border-radius: 5px;
+}
+.form1{
+  
+  padding-top: 50px;
+}
+
+
